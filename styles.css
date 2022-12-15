@@ -2,9 +2,7 @@ header{
     position: sticky;
     top:0;
    padding: 10px;
-    background-color: pink;
- 
-    
+    background-color: pink;   
 }
 .aboutme1{
     font-family: 'Poppins', sans-serif;
@@ -124,5 +122,4 @@ div{
 .song{
     font-family: 'Poppins', sans-serif;
 }   
-
 
