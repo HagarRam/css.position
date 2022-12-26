@@ -18,6 +18,36 @@ function statusMode(){
         abc = false;
         }
     }
+function favoriteFood(){
+const favoriteFood = ["burger", "sushi", "salad","chips"];
+let makeList = `<ul>`;
+for (let i = 0; i < favoriteFood.length; i++) {
+  const element = favoriteFood[i];
+  makeList += `<li>${element}</li>`;
+}
+makeList += `</ul>`;
+document.getElementById("list1").outerHTML= makeList;
+}
+favoriteFood();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //regex!
@@ -55,4 +85,15 @@ function statusMode(){
     //             return false;
     //         }
     //   }
-     
+
+    //ex.intheclass:
+    //     let movies = ['Django', 'thusday', 'thursday', 'friday', 'saturday', 'Titanic'];
+    // let movie = [];
+    // movie[0]=movies[0];
+    // movies.shift();
+    // movies[0]='monday';
+    // movie[1]=movies[movies.length -1]
+    // movies.pop();
+    // movies.push('sunday');
+    // console.log(movies);
+    // console.log(movie);
