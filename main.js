@@ -30,6 +30,53 @@ document.getElementById("list1").outerHTML= makeList;
 }
 favoriteFood();
 
+const myphoto1 =[{
+    description:{
+        title: "SEA",
+        info:"My favorite place, I like to go there every day",
+        favoriteBeachLocation:"My favorite beach is Beit Yanai beach",
+    },
+    className: "photo1",
+    src:"/Assets/vaction.webp",
+},
+{
+    description:{
+        title: "shows",
+        info:"I like to go to concerts often, I think it is a gift to our soul",
+        favoriteBand:"My favorite Band is Hadag Nahash",
+    },
+    className: "photo2",
+    src:"/Assets/show.jpg",
+},
+{
+    description:{
+        title: "trips",
+        info:"I really like to travel in my country, usually every week I travel to all kinds of places.",
+        favoritePlaceLocation:"My favorite place in Israel is Mitzpe Ramon",
+    },
+    className: "photo3",
+   src:"/Assets/trips.jpg",
+},
+];
+
+myphoto1["descrption"] = function(){
+    let container = document.createElement("div");
+    for(let i = 0; i <this.length; i++){
+        let img = document.createElement('img');
+        img.src = myphoto1[i].src;
+        img.className = myphoto1[i].className;
+        img.alt = myphoto1[i].description.title;
+
+        let p = document.createElement('p');
+        p.textContent = myphoto1[i].description.info;
+
+        container.appendChild(img);
+        container.appendChild(p);
+    }
+    return container;
+}
+console.log(myphoto1.descrption());
+document.getElementById("allThePhotos").appendChild(myphoto1.descrption());
 
 
 
