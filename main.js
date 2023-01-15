@@ -33,8 +33,8 @@ const myphoto1 = [
 	{
 		description: {
 			title: 'SEA',
-			info: 'My favorite place, I like to go there every day',
-			favoriteBeachLocation: 'My favorite beach is Beit Yanai beach',
+			// info: 'My favorite place, I like to go there every day',
+			// favoriteBeachLocation: 'My favorite beach is Beit Yanai beach',
 		},
 		className: 'photo1',
 		src: '/Assets/vaction.webp',
@@ -43,8 +43,8 @@ const myphoto1 = [
 	{
 		description: {
 			title: 'shows',
-			info: 'I like to go to concerts often, I think it is a gift to our soul',
-			favoriteBand: 'My favorite Band is Hadag Nahash',
+			// info: 'I like to go to concerts often, I think it is a gift to our soul',
+			// favoriteBand: 'My favorite Band is Hadag Nahash',
 		},
 		className: 'photo2',
 		src: '/Assets/show.jpg',
@@ -53,12 +53,42 @@ const myphoto1 = [
 	{
 		description: {
 			title: 'trips',
-			info: 'I really like to travel in my country, usually every week I travel to all kinds of places.',
-			favoritePlaceLocation: 'My favorite place in Israel is Mitzpe Ramon',
+			// info: 'I really like to travel in my country, usually every week I travel to all kinds of places.',
+			// favoritePlaceLocation: 'My favorite place in Israel is Mitzpe Ramon',
 		},
 		className: 'photo3',
 		src: '/Assets/trips.jpg',
 		id: 'photo3',
+	},
+	{
+		description: {
+			title: 'song',
+			// info: 'I really like to travel in my country, usually every week I travel to all kinds of places.',
+			// favoritePlaceLocation: 'My favorite place in Israel is Mitzpe Ramon',
+		},
+		className: 'photo4',
+		src: '/Assets/SONG.jpeg',
+		id: 'photo4',
+	},
+	{
+		description: {
+			title: 'pilates',
+			// info: 'I really like to travel in my country, usually every week I travel to all kinds of places.',
+			// favoritePlaceLocation: 'My favorite place in Israel is Mitzpe Ramon',
+		},
+		className: 'photo5',
+		src: '/Assets/pilates.jpg',
+		id: 'photo5',
+	},
+	{
+		description: {
+			title: 'burger',
+			// info: 'I really like to travel in my country, usually every week I travel to all kinds of places.',
+			// favoritePlaceLocation: 'My favorite place in Israel is Mitzpe Ramon',
+		},
+		className: 'photo6',
+		src: '/Assets/burger.jpeg',
+		id: 'photo6',
 	},
 ];
 
@@ -84,7 +114,7 @@ myphoto1['descrption'] = function () {
 	return container;
 };
 console.log(myphoto1.descrption());
-document.getElementById('allThePhotos').appendChild(myphoto1.descrption());
+document.getElementById('photos').appendChild(myphoto1.descrption());
 
 //regex!
 // function checkPasswordStrength(password) {

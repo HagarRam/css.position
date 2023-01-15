@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="aboutme1">A Bit About Me</div>
-  <botton class="button1" id="place-I-Love" onclick="delayHandleClick()">Places I Love</botton>
-  <botton class="button1" id="contactMe" onclick="delayHandleClick()" >Content Me</botton>
-  <botton class = "button1" onclick="statusMode()">Dark Mode</botton>
-</header>
-<div id="box1"></div>
-<h1>Hagar Ram</h1> 
-<h5>I'm  22  years  old</h5>
-<h4>Unholy/Sam Smith</h4>
- <p class="song">
-    <span>Mummy don't know daddy's</span> getting hot<br>
-    At the body shop, doing something unholy<br>
-    He lucky, lucky, yeah (ooh)<br>
-    He lucky, lucky, yeah (ye-yeah)<br>
-    He lucky, lucky, yeah<br>
-    He lucky, lucky, yeah<br>
- </p>
- <div id = "allThePhotos" ></div>
-<section>
-    <!-- <img class="photo1" alt="vaction" src="/Assets/vaction.webp">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>About me</title>
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Rubik+80s+Fade&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="aboutme1">A Bit About Me</div>
+			<botton
+				class="button1"
+				id="place-I-Love"
+				onclick="delayHandleClick()"
+				>Places I Love</botton
+			>
+			<botton
+				class="button1"
+				id="contactMe"
+				onclick="delayHandleClick()"
+				>Content Me</botton
+			>
+			<botton
+				class="button1"
+				onclick="statusMode()"
+				>Dark Mode</botton
+			>
+		</header>
+		<div id="box1"></div>
+		<h1>Hagar Ram</h1>
+		<h5>I'm 22 years old</h5>
+		<h4>Unholy/Sam Smith</h4>
+		<p class="song">
+			<span>Mummy don't know daddy's</span> getting hot<br />
+			At the body shop, doing something unholy<br />
+			He lucky, lucky, yeah (ooh)<br />
+			He lucky, lucky, yeah (ye-yeah)<br />
+			He lucky, lucky, yeah<br />
+			He lucky, lucky, yeah<br />
+		</p>
+		<div id="photos"></div>
+		<section>
+			<!-- <img class="photo1" alt="vaction" src="/Assets/vaction.webp">
     <img class="photo2" alt="show" src="/Assets/show.jpg">
     <img class="photo3" alt="trips" src="/Assets/trips.jpg"> -->
-</section>
-<div>
-<h5 class="listfood">my favorite food:</h5>
-<div id="list1"></div>
-    <!-- <ul id="list1">
+		</section>
+		<div>
+			<h5 class="listfood">my favorite food:</h5>
+			<div id="list1"></div>
+			<!-- <ul id="list1">
        <li >burger</li> -->
-        <!-- <li>sushi</li>
+			<!-- <li>sushi</li>
         <li>salad</li>
-        <li>chips</li> --> 
-    <!-- </ul> --> 
-  </div>
-   <span><a class="maps"href="https://www.google.com/maps?q=kiryat+ono&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjTwN7G7vb7AhXB6aQKHe5GA48Q_AUoAXoECAIQAw"> <h3 class="mycity">My city : Qiryat Ono</h3></a></span>
-   <table border="black">
-    <tr>
-      <th bgcolor="pink">pros</th>
-      <th bgcolor="pink">cons</th>
-    </tr>
-    <tr>
-      <td bgcolor="pink">food</td>
-      <td bgcolor="pink">traffic</td>
-    </tr>
-    <tr>
-      <td bgcolor="pink">weather</td>
-      <td bgcolor="pink">Public Transport</td>
-    </tr>
-  </table>
-  <div>
-    <button class="click"type="submit">"click to see more"</button>
-    <br>
-    <br>
-    <br>
-    <!-- <form action="">
+        <li>chips</li> -->
+			<!-- </ul> -->
+		</div>
+		<span
+			><a
+				class="maps"
+				href="https://www.google.com/maps?q=kiryat+ono&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjTwN7G7vb7AhXB6aQKHe5GA48Q_AUoAXoECAIQAw">
+				<h3 class="mycity">My city : Qiryat Ono</h3></a
+			></span
+		>
+		<table border="black">
+			<tr>
+				<th bgcolor="pink">pros</th>
+				<th bgcolor="pink">cons</th>
+			</tr>
+			<tr>
+				<td bgcolor="pink">food</td>
+				<td bgcolor="pink">traffic</td>
+			</tr>
+			<tr>
+				<td bgcolor="pink">weather</td>
+				<td bgcolor="pink">Public Transport</td>
+			</tr>
+		</table>
+		<div>
+			<button
+				class="click"
+				type="submit">
+				"click to see more"
+			</button>
+			<br />
+			<br />
+			<br />
+			<!-- <form action="">
   <input type="password" pattern=`${checkPasswordStrength(this.value)}` required title=`${alertMode(password)}`>
   <button type="submit" >Enter your password</button>
   </form> -->
-  <br>
-  <br>
-  <br>
-  <br>
-    <footer>
-      <span class="footername">Hagar Ram</span>
-      <span class="footerdate">created date:12/12/22</span>
-    </footer>
-  </div>
-  <script src="/main.js"></script>
-</body>
+			<br />
+			<br />
+			<br />
+			<br />
+			<footer>
+				<span class="footername">Hagar Ram</span>
+				<span class="footerdate">created date:12/12/22</span>
+			</footer>
+		</div>
+		<script src="/main.js"></script>
+	</body>
 </html>
